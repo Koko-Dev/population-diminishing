@@ -1,0 +1,21 @@
+{
+  "name": "Population Diminishing Over Time",
+  "short_name": "Population Paper",
+  "description": "An urgent and compelling exploration of the world's declining population and its future consequences.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0b0c10",
+  "theme_color": "#0b0c10",
+  "icons": [
+    {
+      "src": "images/population_icons/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/population_icons/favicon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
