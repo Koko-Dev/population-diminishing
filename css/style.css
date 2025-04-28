@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #111827 0%, #000000 100%);
+    overflow: hidden;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.stars {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: transparent url('https://raw.githubusercontent.com/JulianLaval/canvas-particle-network/master/img/stars.png') repeat;
+    background-size: cover;
+    animation: driftStars 60s linear infinite;
+    z-index: 0;
+}
+
+@keyframes driftStars {
+    from {transform: translate(0, 0);}
+    to {transform: translate(-50%, -50%);}
+}
+
+.content {
+    z-index: 1;
+    animation: fadeIn 2s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.25rem;
+    max-width: 600px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
