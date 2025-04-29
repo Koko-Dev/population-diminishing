@@ -1,5 +1,28 @@
 # Population Diminishing Over Time
 
+# Population Diminishing Over Time
+
+## About This Project
+
+Population Diminishing Over Time is dedicated to exposing the urgent reality of global demographic collapse through serious research, sacred reflection, and public engagement.
+
+This project stands as a living witness to the silent crisis facing humanity: the collapse of future generations through declining birthrates, cultural decay, and the loss of hope.
+
+Through written works like *The Death of Humanity: A Silent Collapse*, this project calls for a return to life, faith, family, and the courageous decision to build a future worth inheriting.
+
+Every line of code, every document, and every commit reflects a solemn dedication to truth, excellence, and the preservation of humanity’s sacred legacy.
+
+---
+
+## Overview
+
+The "Population Diminishing Over Time" project is dedicated to exposing the urgent global demographic collapse through serious research, educational materials, and public engagement.  
+This project serves as a wake-up call to recognize the consequences of declining birthrates, aging societies, and the loss of faith in the future — and to inspire a revival of life, hope, and sustainable civilization.
+
+...
+
+(then the rest continues as we already built it.)
+
 ## Overview
 
 The "Population Diminishing Over Time" project is dedicated to exposing the urgent global demographic collapse through serious research, educational materials, and public engagement.  
