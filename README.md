@@ -1,6 +1,4 @@
-# Population Diminishing Over Time
-
-# Population Diminishing Over Time
+#  Population Diminishing Over Time
 
 ## About This Project
 
@@ -76,3 +74,6 @@ Content, images, and written works are protected under copyright and may not be 
 
 The future belongs not to the strongest, nor the richest — but to those who choose life.  
 This project stands as a living witness to that truth.
+
+---
+Maintained by [Bridgét Kokoski](https://github.com/koko-dev)
