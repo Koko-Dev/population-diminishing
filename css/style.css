@@ -1,27 +1,71 @@
+/* ---------------------------------------
+  🌌 GLOBAL BODY & BACKGROUND
+  --------------------------------------- */
 body {
     margin: 0;
-    background: radial-gradient(circle at top, #111827 0%, #000000 100%);
-    color: white;
-    font-family: 'Inter', sans-serif;
     padding: 2rem;
-    text-align: center;
+    font-family: 'Inter', sans-serif;
+
+    /* Deep starfield tones */
+    background-color: #0b0c10;
+
+    /* Layered radial gradients simulate tiny stars */
+    background-image:
+            radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+            radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+            radial-gradient(circle at 70% 10%, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+            radial-gradient(circle at 90% 50%, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+    background-size: 800px 800px;
+
+    color: white;
     overflow-x: hidden;
+    text-align: left;
 }
 
+/* ✨ Soft overlay glow layer (behind content, above background) */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.025) 20%, transparent 80%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ---------------------------------------
+  🌠 MOVING STARFIELD LAYER
+  --------------------------------------- */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+    background-size: contain;
+    animation: driftStars 90s linear infinite;
+    z-index: -1;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+@keyframes driftStars {
+    from { transform: translate(0, 0); }
+    to { transform: translate(-50%, -50%); }
+}
+
+/* ---------------------------------------
+  🕊️ SACRED INTRO SECTION
+  --------------------------------------- */
 .sacred-intro {
     z-index: 1;
     animation: fadeIn 2s ease-out forwards;
     opacity: 0;
     padding-top: 4rem;
-}
-
-.sacred-intro::after {
-    content: "";
-    display: block;
-    width: 100px;
-    height: 2px;
-    background: rgba(255, 255, 255, 0.3);
-    margin: 1.5rem auto 0;
+    text-align: center;
 }
 
 .sacred-intro h1 {
@@ -40,12 +84,23 @@ body {
     letter-spacing: 1.5px;
 }
 
+.sacred-intro::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 1.5rem auto 0;
+}
+
+/* 📝 Poetic subtitle line */
 .poetic-line {
     font-style: italic;
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
+/* ⬇️ Scroll indicator animation */
 .scroll-down {
     font-size: 2rem;
     animation: bounce 2s infinite;
@@ -58,32 +113,53 @@ body {
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
+/* ---------------------------------------
+  📜 UNIVERSAL SCROLL SECTIONS
+  --------------------------------------- */
 .scroll-section {
-    max-width: 700px;
+    max-width: 900px;
     margin: 4rem auto;
-    text-align: left;
-    line-height: 1.7;
-    font-size: 1.15rem;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.05);
+    padding: 2.5rem 2rem;
+
+    background: rgba(255, 255, 255, 0.04);
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(255,255,255,0.05);
+    box-shadow: 0 0 25px rgba(255,255,255,0.08);
+    backdrop-filter: blur(3px);
+
+    text-align: left;
+    line-height: 1.75;
+    font-size: 1.2rem;
 }
 
+/* ---------------------------------------
+  💔 GRIEF SECTIONS
+  --------------------------------------- */
 .grief-tone {
     background: rgba(255, 255, 255, 0.08);
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     font-style: italic;
     color: #e0e0e0;
+}
+
+/* ---------------------------------------
+  🌅 PROLOGUE SECTION — THE UNIVERSE BEFORE
+  --------------------------------------- */
+.universe-birth {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid rgba(255, 255, 255, 0.15);
+    padding: 2.5rem 2rem;
+    margin: 4rem auto;
+    max-width: 900px;
+    color: #f5f5f5;
+    font-style: italic;
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: 1.75;
+    backdrop-filter: blur(4px);
+    border-radius: 6px;
 }
