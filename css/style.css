@@ -1,60 +1,89 @@
 body {
     margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: radial-gradient(circle at top, #111827 0%, #000000 100%);
-    overflow: hidden;
     color: white;
     font-family: 'Inter', sans-serif;
+    padding: 2rem;
     text-align: center;
-    padding: 1rem;
-    position: relative;
+    overflow-x: hidden;
 }
 
-.stars {
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    background: transparent url('https://raw.githubusercontent.com/JulianLaval/canvas-particle-network/master/img/stars.png') repeat;
-    background-size: cover;
-    animation: driftStars 60s linear infinite;
-    z-index: 0;
-}
-
-@keyframes driftStars {
-    from {transform: translate(0, 0);}
-    to {transform: translate(-50%, -50%);}
-}
-
-.content {
+.sacred-intro {
     z-index: 1;
     animation: fadeIn 2s ease-out forwards;
     opacity: 0;
+    padding-top: 4rem;
+}
+
+.sacred-intro::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 1.5rem auto 0;
+}
+
+.sacred-intro h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.sacred-intro h2 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: #cccccc;
+    margin-top: 0.5rem;
+    letter-spacing: 1.5px;
+}
+
+.poetic-line {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.scroll-down {
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+    opacity: 0.6;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
 }
 
 @keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-p {
-    font-size: 1.25rem;
-    max-width: 600px;
-}
-
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2rem;
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-    p {
-        font-size: 1rem;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
+
+.scroll-section {
+    max-width: 700px;
+    margin: 4rem auto;
+    text-align: left;
+    line-height: 1.7;
+    font-size: 1.15rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.05);
+}
+
+.grief-tone {
+    background: rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    font-style: italic;
+    color: #e0e0e0;
 }
