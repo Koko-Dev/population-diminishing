@@ -296,3 +296,89 @@ body::before {
     backdrop-filter: blur(4px);
     border-radius: 6px;
 }
+
+/* 🌿 Sacred Responsive Design — Honor All Screens */
+
+/* 📱 Small Devices: Let the Scroll Breathe Fully */
+@media (max-width: 768px) {
+    .scroll-section,
+    .universe-birth {
+        width: 100%;
+        max-width: none;
+        padding: 1.25rem;
+        font-size: 1rem;
+    }
+
+    .sacred-intro h1 {
+        font-size: 2rem;
+    }
+
+    .sacred-intro h2 {
+        font-size: 1.2rem;
+    }
+
+    .poetic-line {
+        font-size: 1rem;
+    }
+
+    .scroll-down {
+        font-size: 1.5rem;
+    }
+}
+
+/* 💻 Medium Screens: Default elegance + balance */
+@media (min-width: 1024px) {
+    .scroll-section,
+    .universe-birth {
+        max-width: 900px;
+        font-size: 1.2rem;
+        padding: 2.5rem 2rem;
+    }
+
+    .sacred-intro h1 {
+        font-size: 3rem;
+    }
+
+    .sacred-intro h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* 🖥️ Wide & Ultra-Wide Screens: Expand with Grace */
+@media (min-width: 1600px) {
+    .scroll-section,
+    .universe-birth {
+        max-width: 1200px;
+        font-size: 1.3rem;
+        padding: 3rem 3rem;
+    }
+
+    .sacred-intro h1 {
+        font-size: 3.5rem;
+    }
+
+    .sacred-intro h2 {
+        font-size: 1.75rem;
+    }
+
+    .poetic-line {
+        font-size: 1.3rem;
+    }
+}
+
+/* 🌌 4K Displays: Honor the vastness (optional) */
+@media (min-width: 2000px) {
+    .scroll-section,
+    .universe-birth {
+        max-width: 1400px;
+        font-size: 1.4rem;
+    }
+
+    .sacred-intro h1 {
+        font-size: 4rem;
+    }
+
+    .poetic-line {
+        font-size: 1.4rem;
+    }
+}
