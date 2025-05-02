@@ -1,18 +1,12 @@
-/* UPDATED style.css for Population Diminishing Spoken Word Styling */
+/* ✨ Option 2: Full-Page Scroll Layout with Celestial Overtones + Golden Gilded Scroll Edges */
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #0b0c10;
-    background-image:
-            radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
-            radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.18) 1px, transparent 1px),
-            radial-gradient(circle at 70% 10%, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
-            radial-gradient(circle at 90% 50%, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
-    background-size: 800px 800px;
-    background-repeat: repeat;
-    color: white;
+    background: url('https://www.transparenttextures.com/patterns/white-wall.png'), linear-gradient(to bottom, #e6f2ff, #cce7ff);
+    background-size: cover;
+    color: #003344;
     overflow-x: hidden;
     text-align: left;
     box-sizing: border-box;
@@ -23,29 +17,61 @@ body::before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.025) 20%, transparent 80%);
-    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at 50% 40%, rgba(173, 216, 230, 0.12), transparent 70%),
+    radial-gradient(circle at 20% 70%, rgba(0, 128, 255, 0.08), transparent 80%);
     pointer-events: none;
+    z-index: 0;
+    animation: subtleDrift 80s ease-in-out infinite alternate;
 }
 
-/* ✨ Scroll Poem Style */
+@keyframes subtleDrift {
+    0%   { transform: translate(0, 0); }
+    50%  { transform: translate(-1%, 1%); }
+    100% { transform: translate(1%, -1%); }
+}
+
 .poem-scroll {
-    background: url('https://www.transparenttextures.com/patterns/white-wall.png'), #e0f7fa;
-    color: #003344;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(3px);
     padding: 2.5rem;
     border-radius: 12px;
-    box-shadow: 0 0 30px rgba(184, 207, 230, 0.15);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
     max-width: 900px;
     width: calc(100% - 2rem);
     margin: 3rem auto;
     font-size: 1.2rem;
     line-height: 1.75;
-    position: relative;
     font-family: 'Cormorant Garamond', serif;
-    backdrop-filter: blur(2px);
-    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to bottom, #fef6d9, #f5e3a1, #e7ca6f, #f5e3a1, #fef6d9) 1;
+    border-image-slice: 1;
+}
+
+.poem-scroll::before,
+.poem-scroll::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    background: linear-gradient(to right, #fef6d9, #f5e3a1, #fef6d9);
+    box-shadow: inset 0 0 6px rgba(180, 160, 80, 0.2);
+    opacity: 0.9;
+}
+.poem-scroll::before {
+    top: -9px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.poem-scroll::after {
+    bottom: -9px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 .poem-scroll h2 {
@@ -55,50 +81,51 @@ body::before {
     margin-bottom: 1rem;
 }
 
-.poem-scroll::before, .poem-scroll::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    left: 0;
-    background: radial-gradient(circle, #a2d2ff, #72a1c0);
-    filter: blur(8px);
-    opacity: 0.4;
-}
-.poem-scroll::before {
-    top: -10px;
-}
-.poem-scroll::after {
-    bottom: -10px;
-}
-
-/* 🌌 Sacred Intro Title */
+/* Sacred Intro Title */
 .sacred-intro {
     text-align: center;
     padding-top: 5rem;
-    z-index: 1;
-    animation: fadeIn 2s ease-out forwards;
-    opacity: 0;
     padding-left: 1rem;
     padding-right: 1rem;
+    z-index: 1;
+    position: relative;
 }
 
 .sacred-intro h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
-    color: #ffffff;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    color: #003344;
     margin: 0;
+    text-shadow: 0 0 6px rgba(255,255,255,0.2);
 }
 
 .sacred-intro h2 {
     font-size: 1.75rem;
-    color: #cccccc;
+    color: #335566;
     margin-top: 0.5rem;
     letter-spacing: 1.5px;
 }
 
-/* 📱 Responsive adjustment for small screens */
+.poetic-line {
+    font-style: italic;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: #225577;
+}
+
+.scroll-down {
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+    opacity: 0.5;
+    cursor: pointer;
+    color: #447799;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
 @media (max-width: 480px) {
     .sacred-intro h1 {
         font-size: 2.2rem;
@@ -123,34 +150,12 @@ body::before {
     }
 }
 
-.poetic-line {
-    font-style: italic;
-    font-size: 1.25rem;
-    margin-top: 1rem;
-    color: #d0eaff;
-}
-
-.scroll-down {
-    font-size: 2rem;
-    animation: bounce 2s infinite;
-    opacity: 0.6;
-    cursor: pointer;
-}
-
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(10px); }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
-
 .sacred-footer {
     margin-top: 3rem;
     text-align: center;
     font-size: 0.9rem;
-    color: #a5bcd9;
+    color: #336;
     padding-bottom: 2rem;
+    z-index: 1;
+    position: relative;
 }
