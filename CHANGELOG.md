@@ -29,3 +29,22 @@ This changelog follows a sacred and semantic structure: features, structure, ton
 
 ## [Unreleased]
 *Upcoming: Scroll-based section reveals, ambient sound, parallax layers, and theme toggles.*
+
+## [1.1.0] — Spoken Word Scroll Styling
+**Date:** 2025-05-02
+
+### ✨ Added
+- Elegant scroll-section layout (`.poem-scroll`) with parchment textures and sacred typography
+- Responsive serif styling using `Playfair Display` and `Cormorant Garamond`
+- Celestial layout preserved with sacred intro and ambient starfield
+- Responsive media queries for iPhone X and smaller
+- Light horizontal padding and scroll-width containment on all devices
+- Footer refinement for readability and harmony on small screens
+
+### 💡 Improved
+- Section title scaling on small devices for hierarchy clarity
+- Mobile padding adjustments to eliminate overflow while retaining poetic breath
+- Accessibility improvements in spacing and text legibility
+
+### 📖 Notes
+- This version introduces the sacred spoken-word format that will serve as the foundation for future scroll-triggered animations, parallax storytelling, and interactive liturgical reflections.

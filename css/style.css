@@ -15,6 +15,7 @@ body {
     color: white;
     overflow-x: hidden;
     text-align: left;
+    box-sizing: border-box;
 }
 
 body::before {
@@ -44,6 +45,7 @@ body::before {
     position: relative;
     font-family: 'Cormorant Garamond', serif;
     backdrop-filter: blur(2px);
+    box-sizing: border-box;
 }
 
 .poem-scroll h2 {
@@ -109,6 +111,15 @@ body::before {
     }
     .poem-scroll h2 {
         font-size: 1.4rem;
+    }
+    .poem-scroll {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .sacred-footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 0.85rem;
     }
 }
 
