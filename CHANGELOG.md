@@ -30,6 +30,8 @@ This changelog follows a sacred and semantic structure: features, structure, ton
 ## [Unreleased]
 *Upcoming: Scroll-based section reveals, ambient sound, parallax layers, and theme toggles.*
 
+---
+
 ## [1.1.0] — Spoken Word Scroll Styling
 **Date:** 2025-05-02
 
@@ -48,3 +50,20 @@ This changelog follows a sacred and semantic structure: features, structure, ton
 
 ### 📖 Notes
 - This version introduces the sacred spoken-word format that will serve as the foundation for future scroll-triggered animations, parallax storytelling, and interactive liturgical reflections.
+
+---
+
+## [1.1.1] — Golden Scroll Refinement
+**Date:** 2025-05-02
+
+### ✨ Added
+- Golden gilded edges via gradient borders to `.poem-scroll`
+- Top and bottom scroll embellishments simulating rolled parchment edges
+
+### 💡 Improved
+- Enhanced scroll aesthetic while maintaining balance with celestial background
+- Refined contrast and visual structure without disrupting harmony
+
+### 📖 Notes
+- This update seals the sacred scroll design in gold, affirming its dignity and divine presence.
+- This refinement completes the sacred scroll’s visual identity, establishing a holy foundation for future interactive features such as scroll-triggered fades, audio immersion, and narrative flow.
