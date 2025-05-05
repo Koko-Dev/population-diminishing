@@ -178,3 +178,18 @@ body::before {
     color: #445;
     font-style: italic;
 }
+
+
+.dual-chart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.dual-chart .chart-container {
+    flex: 1 1 350px;
+    max-width: 500px;
+}
