@@ -168,17 +168,19 @@ body::before {
 
 .data-chart {
     max-width: 100%;
-    border-radius: 6px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 0.5rem;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.75rem;
 }
 
 .chart-container figcaption {
     font-size: 0.9rem;
     color: #445;
     font-style: italic;
+    line-height: 1.4;
+    padding: 0 1rem;
 }
-
 
 .dual-chart {
     display: flex;
@@ -186,10 +188,12 @@ body::before {
     gap: 2rem;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 2rem;
+    margin: 3rem auto;
+    max-width: 1200px;
 }
 
 .dual-chart .chart-container {
     flex: 1 1 350px;
     max-width: 500px;
 }
+
