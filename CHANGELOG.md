@@ -11,6 +11,23 @@ This changelog follows a sacred and semantic structure: features, structure, ton
 
 ---
 
+[1.2.1] — Pyramid Correction & Chart Integrity
+
+Date: 2025-05-06
+
+🔧 Fixed
+
+Corrected duplicated South Korea 2023 population chart
+
+Replaced with accurate 2050 projection: south_korea_pyramid_2050.png
+
+📖 Notes
+
+This update ensures visual truth-telling in Part 2, preserving the sacred weight of demographic collapse without redundancy.
+
+Each image now reflects a distinct phase: presence, vanishing, and collapse.
+
+
 ## \[1.2.0] — Sacred Sky Responsiveness & Interaction Foundations
 
 **Date:** 2025-05-06
