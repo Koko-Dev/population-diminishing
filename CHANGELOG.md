@@ -9,44 +9,48 @@ This changelog follows a sacred and semantic structure: features, structure, ton
 
 *Upcoming: Scroll-based section reveals, ambient sound, parallax layers, and theme toggles.*
 
+## [1.3.0] — China’s Collapse Timeline
+**Date:** 2025-05-06
+
+### ✨ Added
+- Full-scroll timeline: **"China’s Collapse in Eight Frames"** inserted after Part 2 in `index.html`
+- Eight visual pyramid charts spanning 1950–2100 with poetic commentary for each
+- Historical reflection and sacred captions explaining each decade’s demographic wound
+
+### 📖 Notes
+- Each pyramid now stands as a verse in the sacred testimony of collapse
+- This is not data visualization — it is memorialization, policy revelation, and prophetic grief
+- This section serves as the prelude to **"The Loneliness of a Billion"**
+
 ---
 
-[1.3.0] — China’s Collapse Timeline
+## [1.2.1] — Pyramid Correction & Chart Integrity
+**Date:** 2025-05-06
 
-Date: 2025-05-06
+### 🔧 Fixed
+- Corrected duplicated **South Korea 2023** population chart
+- Replaced with accurate **2050 projection**: `south_korea_pyramid_2050.png`
 
-✨ Added
+### 📖 Notes
+- This update ensures visual truth-telling in Part 2, preserving the sacred weight of demographic collapse without redundancy
+- Each image now reflects a distinct phase: presence, vanishing, and collapse
 
-Full-scroll timeline: "China’s Collapse in Eight Frames" inserted after Part 2 in index.html
+---
 
-Eight visual pyramid charts spanning 1950–2100 with poetic commentary for each
+## [Unreleased] – 2025-05-06
 
-Historical reflection and sacred captions explaining each decade’s demographic wound
+### ✨ Added
+- New `template.html` structure for scroll reassembly
+- `head.html` partial for dynamic injection
+- `build.js` script to auto-generate `index.html` from scroll parts
 
-📖 Notes
+### 🔧 Changed
+- Updated `style5.css` with new inner scroll spacing for Part 2
+- Modularized entire scroll into `scroll-parts/` for maintainability
 
-Each pyramid now stands as a verse in the sacred testimony of collapse
-
-This is not data visualization — it is memorialization, policy revelation, and prophetic grief
-
-This section will serve as the prelude to "The Loneliness of a Billion"
-
-[1.2.1] — Pyramid Correction & Chart Integrity
-
-Date: 2025-05-06
-
-🔧 Fixed
-
-Corrected duplicated South Korea 2023 population chart
-
-Replaced with accurate 2050 projection: south_korea_pyramid_2050.png
-
-📖 Notes
-
-This update ensures visual truth-telling in Part 2, preserving the sacred weight of demographic collapse without redundancy.
-
-Each image now reflects a distinct phase: presence, vanishing, and collapse.
-
+### 📖 Notes
+- This update completes our move to a sacred modular system
+- All scroll content can now be safely edited in parts and reassembled instantly
 
 ## \[1.2.0] — Sacred Sky Responsiveness & Interaction Foundations
 
