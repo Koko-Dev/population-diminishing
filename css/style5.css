@@ -27,9 +27,15 @@ body::before {
 }
 
 @keyframes subtleDrift {
-    0%   { transform: translate(0, 0); }
-    50%  { transform: translate(-1%, 1%); }
-    100% { transform: translate(1%, -1%); }
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-1%, 1%);
+    }
+    100% {
+        transform: translate(1%, -1%);
+    }
 }
 
 .poem-scroll {
@@ -60,14 +66,16 @@ body::before {
     width: 100%;
     height: 18px;
     background: linear-gradient(to right, #cce7ff, #e6f2ff, #cce7ff);
-    box-shadow: inset 0 0 6px rgba(0,0,64,0.1);
+    box-shadow: inset 0 0 6px rgba(0, 0, 64, 0.1);
     opacity: 0.8;
 }
+
 .poem-scroll::before {
     top: -9px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
+
 .poem-scroll::after {
     bottom: -9px;
     border-bottom-left-radius: 12px;
@@ -79,6 +87,13 @@ body::before {
     font-size: 2rem;
     color: #002d40;
     margin-bottom: 1rem;
+}
+
+.poem-scroll h3 {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #003366;
 }
 
 /* Sacred Intro Title */
@@ -96,7 +111,7 @@ body::before {
     font-size: 3.5rem;
     color: #003344;
     margin: 0;
-    text-shadow: 0 0 6px rgba(255,255,255,0.2);
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
 }
 
 .sacred-intro h2 {
@@ -122,27 +137,36 @@ body::before {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(10px); }
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
 }
 
 @media (max-width: 480px) {
     .sacred-intro h1 {
         font-size: 2.2rem;
     }
+
     .sacred-intro h2 {
         font-size: 1.2rem;
     }
+
     .poetic-line {
         font-size: 1rem;
     }
+
     .poem-scroll h2 {
         font-size: 1.4rem;
     }
+
     .poem-scroll {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
     .sacred-footer {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -197,3 +221,12 @@ body::before {
     max-width: 500px;
 }
 
+#part-2 .poem-scroll {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 860px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
