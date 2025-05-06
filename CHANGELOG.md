@@ -11,6 +11,26 @@ This changelog follows a sacred and semantic structure: features, structure, ton
 
 ---
 
+[1.3.0] — China’s Collapse Timeline
+
+Date: 2025-05-06
+
+✨ Added
+
+Full-scroll timeline: "China’s Collapse in Eight Frames" inserted after Part 2 in index.html
+
+Eight visual pyramid charts spanning 1950–2100 with poetic commentary for each
+
+Historical reflection and sacred captions explaining each decade’s demographic wound
+
+📖 Notes
+
+Each pyramid now stands as a verse in the sacred testimony of collapse
+
+This is not data visualization — it is memorialization, policy revelation, and prophetic grief
+
+This section will serve as the prelude to "The Loneliness of a Billion"
+
 [1.2.1] — Pyramid Correction & Chart Integrity
 
 Date: 2025-05-06
