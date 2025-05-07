@@ -231,18 +231,42 @@ body::before {
     padding-bottom: 2rem;
 }
 
-/* Divider */
-.sacred-divider {
-    border: none;
-    height: 2px;
+/* ===================================================
+   🌌 Sacred Scroll Utilities
+   ---------------------------------------------------
+   These classes enhance the poetic, celestial tone
+   of the scroll layout with gentle animations,
+   elegant dividers, and spiritual pacing cues.
+   =================================================== */
+
+/* ✦ Symbolic Chapter Divider */
+.sacred-symbol-divider {
+    text-align: center;
+    font-size: 2rem;
+    color: #ccd6f6;
+    opacity: 0.5;
     margin: 4rem auto;
-    width: 40%;
-    background: linear-gradient(to right, transparent, #ccd6f6, transparent);
-    opacity: 0.4;
     animation: pulse-divider 6s infinite ease-in-out;
 }
 
 @keyframes pulse-divider {
     0%, 100% { opacity: 0.4; }
     50% { opacity: 0.8; }
+}
+
+/* ✝︎ Sacred Footer */
+.sacred-footer {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #ccd6f6;
+    opacity: 0.6;
+    padding: 3rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sacred-footer a {
+    color: #ccd6f6;
+    text-decoration: none;
+}
+.sacred-footer a:hover {
+    text-decoration: underline;
 }
