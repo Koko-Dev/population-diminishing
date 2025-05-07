@@ -476,12 +476,9 @@ fabric.properties
 .idea/
 .DS_Store
 images/.DS_Store
-css/style2.css
-css/style3.css
-css/style4.css
-# css/style5.css
-css/style7.css
-css/style8.css
-css/style.css
+index_with_markers.html
+index-2.html
+index-3.html
+
 
 
