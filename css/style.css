@@ -230,3 +230,19 @@ body::before {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
+/* Divider */
+.sacred-divider {
+    border: none;
+    height: 2px;
+    margin: 4rem auto;
+    width: 40%;
+    background: linear-gradient(to right, transparent, #ccd6f6, transparent);
+    opacity: 0.4;
+    animation: pulse-divider 6s infinite ease-in-out;
+}
+
+@keyframes pulse-divider {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+}
