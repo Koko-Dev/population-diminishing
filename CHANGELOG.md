@@ -7,6 +7,27 @@ This changelog follows a sacred and semantic structure: features, structure, ton
 
 ## \[Unreleased]
 
+## [Unreleased]
+
+### Design & Structure
+
+- Updated `.sacred-footer` styles for proper spacing, visibility, and z-index layering
+- Introduced `.sacred-symbol-divider` element to visually separate footer from scroll content
+- Improved `<footer>` structure to allow dual `<p>` layout and semantic clarity
+- Adjusted footer link colors to improve contrast and accessibility
+- Added safety `z-index` and layout rules to ensure footer is not overlapped by other layers
+
+### Visual Note
+
+- Celestial background layers (`.stars-layer`, `.nebula-swirl`, etc.) remain structurally present
+  but are currently referencing image/animation assets not yet restored.
+- Visual rebuild will occur after completion of:
+    - `footer.html`
+    - `head.html`
+    - `template.html`
+    - `build.js`
+
+
 *Upcoming: Scroll-based section reveals, ambient sound, parallax layers, and theme toggles.*
 
 ## [1.3.0] — China’s Collapse Timeline
