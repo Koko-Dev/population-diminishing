@@ -1,11 +1,16 @@
 {
   "name": "population-diminishing",
   "version": "1.0.0",
+  "type": "commonjs",
   "description": "A sacred modular scroll project on demographic collapse",
   "main": "build.js",
   "scripts": {
     "build": "node build.js"
   },
   "author": "Koko-Dev",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Koko-Dev/population-diminishing.git"
+  }
 }

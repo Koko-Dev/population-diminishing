@@ -30,6 +30,34 @@ This changelog follows a sacred and semantic structure: features, structure, ton
 
 *Upcoming: Scroll-based section reveals, ambient sound, parallax layers, and theme toggles.*
 
+## [Unreleased]
+
+### Design & Structure
+...
+
+*Upcoming: Scroll-based section reveals, ambient sound, parallax layers, and theme toggles.*
+
+## [1.4.0] — Modular Scroll Builder
+**Date:** 2025-05-14
+
+### ✨ Added
+- Created `build.js`: a sacred compiler script to assemble the scroll from modular parts
+- Established `partials/head.html` and `partials/footer.html` as reusable layout anchors
+- Moved all scroll content to `scroll-parts/` with filename-based order logic
+- Enhanced `package.json` with CommonJS declaration and build script
+- Initial sacred compile succeeded with full head, scroll body, and blessed footer
+
+### 💡 Improved
+- Project is now a true Node.js-based static scroll builder
+- WebStorm structure adjusted to support Node environment and modular clarity
+- Removed direct editing from `index.html` in favor of structured generation
+
+### 🕊️ Notes
+- This marks a structural transformation of the scroll: from single HTML to sacred architecture
+- Build pipeline ready for automation, deployment, and visual resurrection
+
+---
+
 ## [1.3.0] — China’s Collapse Timeline
 **Date:** 2025-05-06
 
