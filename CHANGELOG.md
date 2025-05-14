@@ -30,12 +30,33 @@ This changelog follows a sacred and semantic structure: features, structure, ton
 
 *Upcoming: Scroll-based section reveals, ambient sound, parallax layers, and theme toggles.*
 
-## [Unreleased]
 
 ### Design & Structure
 ...
 
 *Upcoming: Scroll-based section reveals, ambient sound, parallax layers, and theme toggles.*
+
+## [Unreleased]
+
+## [1.5.0] — China’s Collapse Memorial Refactor
+**Date:** 2025-05-14
+
+### ✨ Added
+- Created `part-2b-china-collapse.html` as a standalone scroll part
+- Moved China’s Eight Frames and “The Loneliness of a Billion” into modular structure
+- Applied soft fade-in effects to every decade block and reflection line
+- Added staggered animation for China’s intro lines with `#china-intro`
+- Faded in the section header and each introductory paragraph
+
+### 💡 Improved
+- Finalized poetic structure of Part 2 and separated visual grief timeline from narrative inversion
+- Ensured content flows modularly from Japan/Korea to China
+- Preserved scroll symmetry with BEGIN/END comments
+
+### 🐛 Known Issue
+- Intro text slightly overlaps first image on scroll-in (to be resolved in next visual update)
+
+---
 
 ## [1.4.0] — Modular Scroll Builder
 **Date:** 2025-05-14

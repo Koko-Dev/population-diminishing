@@ -7,8 +7,10 @@
 
 /* --------------------------------------------
   🔽 Scroll-down arrow — smooth scroll to next section
+  ✨ Fade-in animations — sacred decade reveals
 -------------------------------------------- */
 document.addEventListener("DOMContentLoaded", () => {
+    // Scroll-down behavior
     const scrollDownArrow = document.querySelector(".scroll-down");
 
     if (scrollDownArrow) {
@@ -19,7 +21,21 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    // Fade-in observer behavior
+    const fadeInElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    fadeInElements.forEach(el => observer.observe(el));
 });
+
 
 /* --------------------------------------------
   🧭 Optional future features:
