@@ -1,16 +1,13 @@
 # 📜 CHANGELOG — The Death of Humanity Scroll
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file.  
 This changelog follows a sacred and semantic structure: features, structure, tone, and truth.
 
 ---
 
-## \[Unreleased]
-
 ## [Unreleased]
 
 ### Design & Structure
-
 - Updated `.sacred-footer` styles for proper spacing, visibility, and z-index layering
 - Introduced `.sacred-symbol-divider` element to visually separate footer from scroll content
 - Improved `<footer>` structure to allow dual `<p>` layout and semantic clarity
@@ -18,25 +15,44 @@ This changelog follows a sacred and semantic structure: features, structure, ton
 - Added safety `z-index` and layout rules to ensure footer is not overlapped by other layers
 
 ### Visual Note
-
-- Celestial background layers (`.stars-layer`, `.nebula-swirl`, etc.) remain structurally present
+- Celestial background layers (`.stars-layer`, `.nebula-swirl`, etc.) remain structurally present  
   but are currently referencing image/animation assets not yet restored.
 - Visual rebuild will occur after completion of:
-    - `footer.html`
-    - `head.html`
-    - `template.html`
-    - `build.js`
-
-
-*Upcoming: Scroll-based section reveals, ambient sound, parallax layers, and theme toggles.*
-
-
-### Design & Structure
-...
+  - `footer.html`
+  - `head.html`
+  - `template.html`
+  - `build.js`
 
 *Upcoming: Scroll-based section reveals, ambient sound, parallax layers, and theme toggles.*
 
-## [Unreleased]
+---
+
+## [1.6.0] – 2025-05-15
+
+### ✨ Added
+- **Part 3: The Economic Doom Cycle** introduced in `part-3-economy.html`
+- Dual-chart block contrasting UN projection vs. custom model of China’s 2050 pyramid
+- First live **data-driven chart** generated with Python + Matplotlib
+- **`china_pyramid_2050.png`** embedded directly into scroll visuals
+
+### 💡 Improved
+- Balanced and standardized chart visuals using `.chart-container img` and `.dual-chart` layout
+- Scaled and styled visual elements to match poetic tone and narrative pacing
+
+### 🧹 Structure
+- **Modularized CSS**: split `style.css` into:
+  - `base.css`, `layout.css`, `scroll.css`, `charts.css`, `footer.css`, `atmosphere.css`
+- Preserved unused celestial classes for future activation
+- Created `python-pyramids/` directory for integrated chart generation and modeling
+
+### 📜 Scroll Integrity
+- Ensured all Python output flows directly to `images/charts/`
+- All embedded visuals now linked to truth-based origins
+
+> This version marks the moment the scroll began to breathe data —  
+> not just poetry, but **evidence**, **prophecy**, and **visual clarity.**
+
+---
 
 ## [1.5.0] — China’s Collapse Memorial Refactor
 **Date:** 2025-05-14
@@ -57,6 +73,7 @@ This changelog follows a sacred and semantic structure: features, structure, ton
 - Intro text slightly overlaps first image on scroll-in (to be resolved in next visual update)
 
 ---
+
 
 ## [1.4.0] — Modular Scroll Builder
 **Date:** 2025-05-14
