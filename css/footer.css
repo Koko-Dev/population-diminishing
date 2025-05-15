@@ -1,0 +1,50 @@
+/* ✝︎ Sacred Footer & Divider */
+
+.sacred-footer {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #051033;
+    opacity: 0.6;
+    padding: 3rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    position: relative;
+}
+
+.sacred-footer a {
+    color: #030a21;
+    text-decoration: none;
+}
+.sacred-footer a:hover {
+    text-decoration: underline;
+}
+
+footer.sacred-footer {
+    position: relative;
+    z-index: 2;
+}
+
+.sacred-footer p {
+    margin: 0.75rem 0;
+    line-height: 1.6;
+}
+.sacred-footer p:last-child {
+    margin-top: 1rem;
+    color: #ccd6f6;
+}
+
+.sacred-symbol-divider {
+    text-align: center;
+    font-size: 2rem;
+    opacity: 0.5;
+    margin: 5rem auto 2rem;
+    color: #051033;
+    z-index: 9;
+    position: relative;
+    animation: pulse-divider 6s infinite ease-in-out;
+}
+
+@keyframes pulse-divider {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+}

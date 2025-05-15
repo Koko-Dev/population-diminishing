@@ -1,0 +1,40 @@
+/* 📐 Layout Tweaks for Specific Sections */
+
+#part-2 .poem-scroll {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 860px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 480px) {
+    .sacred-intro h1 {
+        font-size: 2.2rem;
+    }
+
+    .sacred-intro h2 {
+        font-size: 1.2rem;
+    }
+
+    .poetic-line {
+        font-size: 1rem;
+    }
+
+    .poem-scroll h2 {
+        font-size: 1.4rem;
+    }
+
+    .poem-scroll {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .sacred-footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 0.85rem;
+    }
+}

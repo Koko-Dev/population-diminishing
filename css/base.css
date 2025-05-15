@@ -1,0 +1,24 @@
+/* 🌱 Base Styles & Typography */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/white-wall.png'),
+    linear-gradient(to bottom, #e6f2ff, #cce7ff);
+    background-size: cover;
+    color: #003344;
+    overflow-x: hidden;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

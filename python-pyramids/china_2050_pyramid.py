@@ -53,6 +53,6 @@ plt.axvline(0, color='black', linewidth=0.5)
 
 # Save the chart
 chart_path = "/Users/kokodev/WebstormProjects/projects/population-diminishing/images/charts/china_pyramid_2050.png"
-plt.savefig(chart_path)
+plt.savefig(chart_path, dpi=300, bbox_inches='tight')
+print(f"Chart saved to: {chart_path}")
 
-chart_path

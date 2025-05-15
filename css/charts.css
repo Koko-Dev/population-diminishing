@@ -1,0 +1,42 @@
+.chart-container {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.chart-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+}
+
+.chart-container figcaption {
+    font-size: 0.9rem;
+    color: #445;
+    font-style: italic;
+    line-height: 1.4;
+    padding: 0 1rem;
+}
+
+.dual-chart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 3rem auto;
+    max-width: 1200px;
+}
+
+.dual-chart .chart-container {
+    flex: 1 1 350px;
+    max-width: 500px;
+}
+
+.data-chart {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.75rem;
+}
